@@ -14,9 +14,9 @@
 ## Usage
 
 - To run the script with its default params:
-```
-./ec2_spot_instance_finder.py
-```
+    ```
+    ./ec2_spot_instance_finder.py
+    ```
     - If a virtualenv is used, activate it first i.e. `. env/bin/activate & ./ec2_spot_instance_finder.py`
 
 ## Example Response
