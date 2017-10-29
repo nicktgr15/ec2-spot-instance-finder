@@ -5,11 +5,11 @@
 - Have aws account credentials defined under `~/.aws/credentials` (or make them somehow available to boto)
 - Install the dependencies listed in `requirements.txt`
     - Ideally in a virtual environment i.e.
-    ```
-    virtualenv env 
-    . env/bin/activate 
-    pip install -r requirements.txt
-    ```
+        ```
+        virtualenv env 
+        . env/bin/activate 
+        pip install -r requirements.txt
+        ```
 
 ## Usage
 
@@ -17,7 +17,7 @@
 ```
 ./ec2_spot_instance_finder.py
 ```
--- If a virtualenv is used, activate it first i.e. `. env/bin/activate & ./ec2_spot_instance_finder.py`
+    - If a virtualenv is used, activate it first i.e. `. env/bin/activate & ./ec2_spot_instance_finder.py`
 
 ## Example Response
 
