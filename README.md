@@ -2,7 +2,7 @@
 
 ## Installation 
 
-- Have aws account credentials configured under ~/.aws/credentials (or make them somehow available to boto)
+- Have aws account credentials defined under `~/.aws/credentials` (or make them somehow available to boto)
 - Install the dependencies listed in `requirements.txt`
     - Ideally in a virtual environment i.e.
     ```
@@ -37,7 +37,7 @@ The table bellow was generated using the default params and as such it is descen
 ...
 ```
 
-To sort by a different column e.g. by the memory_per_core:
+To sort by a different column e.g. by `memory_per_core`:
 ```
 ./ec2_spot_instance_finder.py --sort-by memory_per_core --desc
 ```
