@@ -36,8 +36,6 @@ def main(sort_by, region, zone, sort_type):
     d = get_instances_dict()
     result = []
 
-    print(d)
-
     for p in ec2_conn.get_spot_price_history(product_description='Linux/UNIX',
                                              availability_zone=zone,
                                              start_time=datetime.now().isoformat()):
