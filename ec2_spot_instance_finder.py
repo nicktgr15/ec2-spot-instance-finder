@@ -36,6 +36,8 @@ def main(sort_by, region, zone, sort_type):
     d = get_instances_dict()
     result = []
 
+    print(d)
+
     for p in ec2_conn.get_spot_price_history(product_description='Linux/UNIX',
                                              availability_zone=zone,
                                              start_time=datetime.now().isoformat()):
@@ -56,7 +58,7 @@ def main(sort_by, region, zone, sort_type):
 
     df = pd.DataFrame(result, columns=list(DataEntry._fields))
 
-    print df.sort_values(by=sort_by, ascending=sort_type)
+    print(df.sort_values(by=sort_by, ascending=sort_type))
 
 
 if __name__ == '__main__':
